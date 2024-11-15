@@ -1,0 +1,88 @@
+{
+  "todolists": [
+    {
+      "id": "e4bb5784-b5c2-484b-92d5-9360fe847cab",
+      "creationDate": "2024-11-14T13:57:32.160Z",
+      "title": "Список 1",
+      "items": [
+        {
+          "id": "951b7027-b2fb-4f8f-b055-20abca685e40",
+          "title": "Задача 1",
+          "isDone": false
+        },
+        {
+          "id": "026b8f36-74fc-4e14-a335-fc18d05c7fee",
+          "title": "Задача 2",
+          "isDone": false
+        },
+        {
+          "id": "d67e287f-58bf-4d04-be7a-be01a53223c3",
+          "title": "Задача 3",
+          "isDone": false
+        },
+        {
+          "id": "3419cc97-2beb-40ff-b797-115f6cf624ae",
+          "title": "Задача 4",
+          "isDone": false
+        },
+        {
+          "id": "67c4e8d8-ee19-449e-b050-d4cb13d8756e",
+          "title": "Задача 5",
+          "isDone": false
+        },
+        {
+          "id": "08dae184-aaf8-4359-aee7-fc8625b57b51",
+          "title": "Задача 6",
+          "isDone": false
+        },
+        {
+          "id": "5f5e87d0-e87f-4a3f-a992-a200606c98cb",
+          "title": "Задача 7",
+          "isDone": false
+        },
+        {
+          "id": "4d785cb3-01d5-4351-9a1b-1fdd0c643426",
+          "title": "Задача 8",
+          "isDone": false
+        },
+        {
+          "id": "5b860759-fd41-4a70-b375-8532293fecab",
+          "title": "Задача 9",
+          "isDone": false
+        }
+      ]
+    },
+    {
+      "id": "93caceba-8ac4-4513-ac89-e438a604756d",
+      "creationDate": "2024-11-15T13:57:32.161Z",
+      "title": "План идеального выходного",
+      "items": [
+        {
+          "id": "ced91316-47e5-48fd-81b8-bc006808b128",
+          "title": "Задача 1",
+          "isDone": false
+        },
+        {
+          "id": "8804e608-a7e3-45bd-8c00-0471cf0cf99e",
+          "title": "Задача 2",
+          "isDone": false
+        },
+        {
+          "id": "ad6cadda-11a5-40ea-b01a-608af7dab9ff",
+          "title": "Задача 3",
+          "isDone": false
+        },
+        {
+          "id": "0c568f7e-5b69-4604-8c69-9b02d8e8ce52",
+          "title": "Задача 43",
+          "isDone": false
+        },
+        {
+          "id": "1c481559-b427-41f8-aac0-df20f481b2df",
+          "title": "Задача 5",
+          "isDone": false
+        }
+      ]
+    }
+  ]
+}
