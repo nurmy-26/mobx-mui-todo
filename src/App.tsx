@@ -1,13 +1,15 @@
-import './App.css';
+import { Container, Typography } from '@mui/material';
 import TodoSection from './modules/todo-section/components/TodoSection';
 
 const App = () => {
   return (
-    <main>
-      <h1>ToDo App</h1>
+    <Container component={'main'} sx={{ my: 4, textAlign: 'center', color: 'primary.main' }}>
+
+      <Typography gutterBottom variant='h1'>TODO APP</Typography>
 
       <TodoSection />
-    </main>
+
+    </Container>
   )
 }
 

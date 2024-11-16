@@ -75,16 +75,6 @@ class TodolistsStore {
     }
   };
 
-  renameTodo = (listId: string, todoId: string, newTitle: string) => {
-    const list = this.todolists.find((list) => list.id === listId);
-    if (list) {
-      const todo = list.items.find((item) => item.id === todoId);
-      if (todo) {
-        todo.title = newTitle;
-      }
-    }
-  };
-
   clearTodos = (listId: string) => {
     const list = this.todolists.find((list) => list.id === listId);
     if (list) {
