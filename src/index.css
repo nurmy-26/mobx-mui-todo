@@ -4,3 +4,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* стили для всех полос прокрутки */
+::-webkit-scrollbar {
+  width: 0.375rem; /* ширина вертикального скроллбара */
+  height: 0.375rem; /* высота горизонтального скроллбара */
+}
+/* стили для ползунка внутри полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  background-color: #cccedf;
+  border-radius: 8px;
+}
+/* цвет ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #77777a;
+}
+/* фон скроллбара */
+::-webkit-scrollbar-track {
+  background: #f5f6ff;
+  border-radius: 8px;
+}

@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import { v4 as uuidv4 } from "uuid";
-import { TItem, TList } from "./types";
+import { TItem, TList } from "../types";
 
 // store для списков
 class TodolistsStore {

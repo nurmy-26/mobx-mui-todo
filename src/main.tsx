@@ -7,10 +7,10 @@ import { createTheme, CssBaseline, responsiveFontSizes, ThemeProvider } from '@m
 let theme = createTheme({
   palette: {
     primary: {
-      main: "#63657F",
+      main: "#63657f",
     },
     secondary: {
-      main: "#CCCEDF",
+      main: "#cccedf",
     },
     success: {
       main: '#77feff',
