@@ -32,7 +32,9 @@ const TodoCard = observer(({
       minHeight: 400,
       display: 'flex',
       flexDirection: 'column',
-    }}>
+    }}
+      data-cy="todo-card"
+    >
 
       <CardTitle listId={listId} listTitle={listTitle} openListDeletingModal={openListDeletingModal} />
 

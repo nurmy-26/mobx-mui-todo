@@ -15,6 +15,7 @@ const CardDate = ({ listDate }: CardDateProps) => {
       variant={'body2'}
       color="secondary"
       sx={{ textAlign: 'right' }}
+      data-cy="todo-date"
     >
       {listCreationDate}
     </Typography>

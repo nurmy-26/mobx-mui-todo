@@ -12,7 +12,7 @@ const AddTaskForm = ({ listId, handleAddTodo }: AddTaskFormProps) => {
   const initialItemTitle = '';
   const [itemTitle, setItemTitle] = useState(initialItemTitle);
 
-  // добавление нового элемента в список
+  // добавление новой задачи в список
   const addTodo = (e: FormEvent) => {
     e.preventDefault();
 
@@ -26,6 +26,7 @@ const AddTaskForm = ({ listId, handleAddTodo }: AddTaskFormProps) => {
       component='form'
       sx={{ mb: 1, display: 'flex', alignItems: 'center' }}
       onSubmit={addTodo}
+      data-cy="add-task-form"
     >
       <TextField
         id="new-todo"
@@ -34,6 +35,7 @@ const AddTaskForm = ({ listId, handleAddTodo }: AddTaskFormProps) => {
         sx={{ mb: 2 }}
         value={itemTitle}
         onChange={(e) => setItemTitle(e.target.value)}
+        data-cy="add-task-input"
       />
 
       <IconButton
@@ -41,6 +43,7 @@ const AddTaskForm = ({ listId, handleAddTodo }: AddTaskFormProps) => {
         type='submit'
         disabled={itemTitle === ''}
         sx={{ color: 'primary.main' }}
+        data-cy="add-task-btn"
       >
         <AddIcon />
       </IconButton>

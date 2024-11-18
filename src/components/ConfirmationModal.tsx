@@ -54,12 +54,13 @@ const ConfirmationModal = ({
           p: 4,
           textAlign: 'center'
         }}
+        data-cy="confirmation-modal"
       >
         <Typography variant='h3' sx={{ mb: 1 }}>
           Вы действительно хотите {actionText} {subjectText}?
         </Typography>
         {accentSubjectText &&
-          <Typography noWrap color='info' sx={{ mb: 4 }} variant='h3'>
+          <Typography variant='h3' noWrap color='info' sx={{ mb: 4 }}>
             {accentSubjectText}
           </Typography>}
 
@@ -73,6 +74,7 @@ const ConfirmationModal = ({
             sx={{ minWidth: { xs: '120px', sm: '140px' } }}
             variant="outlined"
             onClick={handleSubmit}
+            data-cy="modal-submit-btn"
           >
             {btnSubmitText}
           </Button>
@@ -81,6 +83,7 @@ const ConfirmationModal = ({
             onClick={handleCancel}
             variant='contained'
             color='primary'
+            data-cy="modal-cancel-btn"
           >
             {btnCancelText}
           </Button>

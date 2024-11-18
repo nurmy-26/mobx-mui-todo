@@ -50,7 +50,9 @@ const CardTitle = observer(({ listId, listTitle, openListDeletingModal }: CardTi
         '&:hover .edit-icon': {
           visibility: 'visible',
         },
-      }}>
+      }}
+      data-cy="card-header"
+    >
       {/* если вошли в режим редактирования - отобразится инпут (форма) */}
       {isEditing ? (
         <Box
@@ -67,6 +69,7 @@ const CardTitle = observer(({ listId, listTitle, openListDeletingModal }: CardTi
             value={newListTitle}
             onChange={(e) => setNewListTitle(e.target.value)}
             onKeyDown={handleCloseEdit}
+            data-cy="rename-list-input"
           />
 
           <IconButton
@@ -74,6 +77,7 @@ const CardTitle = observer(({ listId, listTitle, openListDeletingModal }: CardTi
             type='submit'
             disabled={newListTitle === ''}
             sx={{ color: 'success.main', backgroundColor: 'secondary.light' }}
+            data-cy="rename-list-submit-btn"
           >
             <DoneIcon />
           </IconButton>
@@ -82,13 +86,14 @@ const CardTitle = observer(({ listId, listTitle, openListDeletingModal }: CardTi
             aria-label='Отмена'
             type='reset'
             sx={{ color: 'error.main', backgroundColor: 'secondary.light' }}
+            data-cy="rename-list-reset-btn"
           >
             <ClearIcon />
           </IconButton>
         </Box>
       ) : (
         <>
-          <Typography variant='h2' noWrap color="primary" sx={{ borderRadius: '4px', }}>
+          <Typography variant='h2' noWrap color="primary" sx={{ borderRadius: '4px', }} data-cy="list-title">
             {listTitle}
           </Typography>
 
@@ -96,6 +101,7 @@ const CardTitle = observer(({ listId, listTitle, openListDeletingModal }: CardTi
             className='edit-icon'
             sx={{ ml: 1, visibility: 'hidden', p: 0.5 }}
             aria-label='Редактировать имя списка'
+            data-cy="edit-list-btn"
           >
             <EditIcon fontSize='small' />
           </IconButton>
@@ -105,6 +111,7 @@ const CardTitle = observer(({ listId, listTitle, openListDeletingModal }: CardTi
             title={'Удалить список'}
             sx={{ marginLeft: 'auto' }}
             onClick={openDeletingList}
+            data-cy="del-list-btn"
           >
             <DeleteIcon />
           </IconButton>

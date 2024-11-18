@@ -12,15 +12,16 @@ type FooterProps = {
 
 const Footer = observer(({ items, handleClearAllTodos }: FooterProps) => {
   return (
-    <Box component='footer' sx={{ ml: 'auto' }}>
+    <Box component='footer' sx={{ ml: 'auto' }} data-cy="card-footer">
       {items.length !== 0 && (
         <Button
-          title="Удалить все элементы"
+          title="Удалить все задачи"
           variant="contained"
           startIcon={<DeleteIcon />}
           onClick={handleClearAllTodos}
+          data-cy="del-all-tasks-btn"
         >
-          Все элементы
+          Все задачи
         </Button>
       )}
     </Box>

@@ -21,6 +21,7 @@ const AddListForm = () => {
       component='form'
       sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
       onSubmit={handleAddTodolist}
+      data-cy="add-list-form"
     >
       <TextField
         id="new-list"
@@ -29,6 +30,7 @@ const AddListForm = () => {
         sx={{ mb: 2 }}
         value={listTitle}
         onChange={(e) => setListTitle(e.target.value)}
+        data-cy="add-list-input"
       />
 
       <IconButton
@@ -36,6 +38,7 @@ const AddListForm = () => {
         type='submit'
         disabled={listTitle === ''}
         sx={{ color: 'primary.main' }}
+        data-cy="add-list-btn"
       >
         <AddIcon />
       </IconButton>

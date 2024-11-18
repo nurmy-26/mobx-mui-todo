@@ -9,7 +9,7 @@ import AllListsDeletingModal from "./modals/AllListsDeletingModal";
 
 const TodoSection = observer(() => {
   return (
-    <Box component='section' aria-label="Списки дел">
+    <Box component='section' aria-label="Списки дел" data-cy="todo-section">
       <ControlBar />
 
       <Todolists />

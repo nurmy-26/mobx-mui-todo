@@ -24,7 +24,9 @@ const ControlBar = observer(() => {
       flexDirection: isMobile ? 'column' : 'row',
       justifyContent: 'space-between',
       alignItems: isMobile ? 'flex-start' : 'center',
-    }}>
+    }}
+      data-cy="control-bar"
+    >
       <AddListForm />
 
       <Button
@@ -33,6 +35,7 @@ const ControlBar = observer(() => {
         startIcon={<DeleteIcon />}
         disabled={todolists.length === 0}
         onClick={openAllListsDeletingModal}
+        data-cy="del-all-lists-btn"
       >
         Все списки
       </Button>

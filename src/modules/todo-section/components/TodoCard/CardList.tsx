@@ -27,10 +27,12 @@ const CardList = observer(({ items, listId, handleToggleTodo, handleDeleteTodo }
         gridTemplateRows: 'auto',
         alignContent: 'start',
       }}
+      data-cy="card-list"
     >
       {items.map((todo) => (
         <ListItemButton
           key={todo.id}
+          component="li"
           role="listitem"
           sx={{
             p: 0,
@@ -41,6 +43,7 @@ const CardList = observer(({ items, listId, handleToggleTodo, handleDeleteTodo }
             }
           }}
           onClick={() => handleToggleTodo(listId, todo.id)}
+          data-cy="task"
         >
           <ListItemIcon>
             <Checkbox
@@ -50,6 +53,7 @@ const CardList = observer(({ items, listId, handleToggleTodo, handleDeleteTodo }
               inputProps={{
                 'aria-labelledby': todo.id,
               }}
+              data-cy="task-checkbox"
             />
           </ListItemIcon>
           <Typography sx={{
@@ -57,14 +61,17 @@ const CardList = observer(({ items, listId, handleToggleTodo, handleDeleteTodo }
             overflow: 'hidden',
             whiteSpace: 'nowrap',
             textOverflow: 'ellipsis'
-          }}>
+          }}
+            data-cy="task-title"
+          >
             {todo.title}
           </Typography>
           <IconButton
-            aria-label='Удалить элемент'
+            aria-label='Удалить задачу'
             className='delete-icon'
             sx={{ visibility: 'hidden' }}
             onClick={() => handleDeleteTodo(listId, todo.id)}
+            data-cy="del-task-btn"
           >
             <DeleteIcon fontSize='small' />
           </IconButton>

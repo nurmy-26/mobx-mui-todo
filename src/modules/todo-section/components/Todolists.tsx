@@ -6,7 +6,7 @@ import modalStore from "../store/modal";
 
 
 const Todolists = observer(() => {
-  // добавление нового элемента в список
+  // добавление новой задачи в список
   const handleAddTodo = (listId: string, todoTitle: string) => {
     store.addTodo(listId, todoTitle);
   };
@@ -16,7 +16,7 @@ const Todolists = observer(() => {
     store.toggleTodo(listId, todoId);
   };
 
-  // удаление элемента из списка
+  // удаление задачи из списка
   const handleDeleteTodo = (listId: string, todoId: string) => {
     store.deleteTodo(listId, todoId);
   };
@@ -37,6 +37,7 @@ const Todolists = observer(() => {
         listStyleType: 'none',
         padding: 0,
       }}
+      data-cy="todolists"
     >
       {store.todolists.map((todolist) => (
         <Grid2 component='li' key={todolist.id}

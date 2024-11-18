@@ -40,6 +40,7 @@ const ListDeletingModal = observer(({ isOpened }: ListDeletingModalProps) => {
       handleSubmit={handleDelete}
       btnCancelText={'Отмена'}
       handleCancel={handleClose}
+      data-cy="list-del-modal"
     />
   );
 });
