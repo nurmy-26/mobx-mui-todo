@@ -25,7 +25,7 @@
 ### 1. Клонируйте репозиторий с помощью команды
 
 ```shell
-git clone https://github.com/nurmy-26/test-todo.git
+git clone https://github.com/nurmy-26/mobx-mui-todo.git
 ```
 
 ### 2. Установите зависимости
